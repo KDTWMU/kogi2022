@@ -15,8 +15,17 @@
 
         th {{
             background-color: #f2f2f2;
-        }}
+        }} 
+        .hidden {
+            display: none;
+        }
     </style>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            element.style.display = element.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </head>
 <body>
     {content}
